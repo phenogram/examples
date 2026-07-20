@@ -1,0 +1,20 @@
+{
+    "name": "phenogram/examples",
+    "description": "Runnable examples for Phenogram Framework",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "phenogram/bindings": "^7.0",
+        "phenogram/framework": "^6.0",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "scripts": {
+        "check": [
+            "@composer validate --strict",
+            "@php -l config/config.php",
+            "@php -l src/basics/echo_bot.php",
+            "@php tests/smoke.php"
+        ]
+    }
+}
