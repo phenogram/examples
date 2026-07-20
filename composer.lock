@@ -1700,16 +1700,16 @@
         },
         {
             "name": "phenogram/framework",
-            "version": "6.0.0",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phenogram/framework.git",
-                "reference": "d00bf56e649590a01e8fa88acf002ce91b6dec3e"
+                "reference": "0080e55db805e156e14bfd95929fd31747f78989"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phenogram/framework/zipball/d00bf56e649590a01e8fa88acf002ce91b6dec3e",
-                "reference": "d00bf56e649590a01e8fa88acf002ce91b6dec3e",
+                "url": "https://api.github.com/repos/phenogram/framework/zipball/0080e55db805e156e14bfd95929fd31747f78989",
+                "reference": "0080e55db805e156e14bfd95929fd31747f78989",
                 "shasum": ""
             },
             "require": {
@@ -1747,12 +1747,23 @@
                     "email": "shanginn@gmail.com"
                 }
             ],
-            "description": "Telegram bot API framework",
+            "description": "Async, strictly typed Telegram bot framework for PHP 8.4",
+            "homepage": "https://github.com/phenogram/framework",
+            "keywords": [
+                "Telegram-Bot-API",
+                "async",
+                "bot",
+                "framework",
+                "php",
+                "telegram",
+                "telegram-bot",
+                "type-safe"
+            ],
             "support": {
                 "issues": "https://github.com/phenogram/framework/issues",
-                "source": "https://github.com/phenogram/framework/tree/6.0.0"
+                "source": "https://github.com/phenogram/framework"
             },
-            "time": "2026-04-29T06:08:33+00:00"
+            "time": "2026-07-20T12:26:23+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -2611,5 +2622,5 @@
         "php": "^8.4"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
