@@ -1,62 +1,62 @@
-**English** · [Русский](README.ru.md)
+[English](README.en.md) · **Русский**
 
-# Phenogram Framework examples
+# Примеры Phenogram Framework
 
-This repository contains small applications for the current stable Phenogram Framework.
+В этом репозитории находятся небольшие приложения для текущей стабильной версии Phenogram Framework.
 
-## Requirements
+## Требования
 
-- PHP 8.4 or later
+- PHP 8.4 или новее
 - Composer 2
-- A Telegram bot token from [BotFather](https://t.me/BotFather)
+- Токен Telegram-бота от [BotFather](https://t.me/BotFather)
 
-## Compatibility
+## Совместимость
 
-| Component | Version |
+| Компонент | Версия |
 | --- | --- |
 | Phenogram Framework | `^6.0` |
 | Phenogram Bindings | `^7.0` |
-| Telegram Bot API model | 9.6 |
+| Модель Telegram Bot API | 9.6 |
 
-The example imports Bindings types directly.
-The project therefore declares Bindings as a direct dependency.
+Пример напрямую импортирует типы Bindings.
+Поэтому проект явно объявляет Bindings своей зависимостью.
 
-## Install
+## Установка
 
-Install the dependencies:
+Установите зависимости:
 
 ```bash
 composer install
 ```
 
-Create a local environment file:
+Создайте локальный файл с переменными окружения:
 
 ```bash
 cp .env.dist .env
 ```
 
-Open `.env`. Replace the placeholder with your bot token. Do not commit this file.
+Откройте `.env`. Замените заглушку на токен бота. Не добавляйте этот файл в Git.
 
-## Run the echo bot
+## Запуск echo-бота
 
-Start the example:
+Запустите пример:
 
 ```bash
 php src/basics/echo_bot.php
 ```
 
-Send a text message to the bot. The bot sends the same text to the chat. Press `Ctrl+C` to stop the process.
+Отправьте боту текстовое сообщение. Бот отправит тот же текст в чат. Нажмите `Ctrl+C`, чтобы остановить процесс.
 
-The example uses long polling. It makes live requests to the Telegram Bot API.
+Пример использует long polling. Он выполняет реальные запросы к Telegram Bot API.
 
-## Verify the repository
+## Проверка репозитория
 
-Run the offline checks:
+Запустите офлайн-проверки:
 
 ```bash
 composer check
 ```
 
-The check validates Composer metadata.
-It runs the complete echo flow with a local API client.
-It does not use a bot token or a network request.
+Команда проверяет метаданные Composer.
+Она запускает полный сценарий echo-бота с локальным API-клиентом.
+Команда не использует токен бота и не выполняет сетевой запрос.
